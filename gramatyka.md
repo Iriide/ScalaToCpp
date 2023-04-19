@@ -1,5 +1,5 @@
 # Gramatyka
-### zbiór tokenów (symboli terminalnych):
+### Zbiór tokenów (symboli terminalnych):
 
 | Element | Symbol |
 |---------|--------|
@@ -10,9 +10,9 @@
 | Wczytaj   | `,`    |
 | Wypisz  | `.`    |
 | RozpocznijPętlę | `[` |
-| Zakończ pętlę | `]`   |
+| ZakończPętlę | `]`   |
 
-### zbiór symboli nieterminalnych:
+### Zbiór symboli nieterminalnych:
 | Rule |
 |------|
 | `SymbolStartowy` |
