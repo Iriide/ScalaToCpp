@@ -3,27 +3,38 @@
 
 | Element | Symbol |
 |---------|--------|
-| Dodaj     | `+`    |
-| Odejmij | `-`    |
-| Prawo   | `>`    |
-| Lewo    | `<`    |
-| Wczytaj   | `,`    |
-| Wypisz  | `.`    |
-| RozpocznijPętlę | `[` |
-| ZakończPętlę | `]`   |
+| Plus     | `+`    |
+| Minus | `-`    |
+| PtrRight   | `>`    |
+| PtrLeft    | `<`    |
+| Read   | `,`    |
+| Write  | `.`    |
+| BeginLoop | `[` |
+| EndLoop | `]`   |
 
 ### Zbiór symboli nieterminalnych:
-| Rule |
-|------|
-| `SymbolStartowy` |
-| `Operator` |
-| `Składnik` |
-| `Pętla` |
+
+| Non-terminal symbol |
+| --- |
+| `<initialize>` |
+| `<program>` |
+| `<instruction>` |
+| `<pointerOperation>` |
+| `<valueOperation>` |
+| `<readOperation>` |
+| `<writeOperation>` |
+| `<loop>` | 
+
+There are a total of 8 non-terminal symbols in the Brainfuck grammar.
 
 ### Produkcja:
-| Rule | Definition |
-|------|------------|
-| `"SymbolStartowy"` | `"Składnik"` \| `"Operator"` |
-| `"Operator"` | `'+'` \| `'-'` \| `'>'` \| `'<'` \| `','` \| `'.'` \| `'['` \| `']'` |
-| `"Składnik"` | `"Pętla"` \| `"Operator"` \| `"Składnik"` `"Operator"` |
-| `"Pętla"` | `'['` `"Składnik"` `']'` |
+| Non-terminal symbol | Production rule |
+| --- | --- |
+| `<initialize>` | `<program>` |
+| `<program>` | `<instruction>` <br> \| `<instruction>` `<program>` |
+| `<instruction>` | `<pointerOperation>` <br> \| `<valueOperation>` <br> \| `<readOperation>` <br> \| `<writeOperation>` <br> \| `<loop>` |
+| `<pointerOperation>` | ">" <br> \| "<" |
+| `<valueOperation>` | "+" <br> \| "-" |
+| `<readOperation>` | "," |
+| `<writeOperation>` | "." |
+| `<loop>` | "[" `<program>` "]" |
