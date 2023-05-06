@@ -74,7 +74,7 @@
 | literal           | booleanLiteral \| integerLiteral \| stringLiteral              |
 | booleanLiteral    | "true" \| "false"                                             |
 | integerLiteral    | [0-9]+                                                        |
-| stringLiteral     | "\"" .* "\""                                                  |
+| stringLiteral     | `\".*\"`                                                      |
 | className         | identifier                                                    |
 | objectName        | identifier                                                    |
 | traitName         | identifier                                                    |
