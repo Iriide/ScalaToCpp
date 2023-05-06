@@ -34,7 +34,7 @@
 | TRUE           | `"true"`    |
 | FALSE          | `"false" `    |
 | INT_LITERAL    | `[0-9]+`    |
-| STRING_LITERAL | `\".*\"`    |
+| STRING_LITERAL | `"\""(^["]\|(\"))*"\"" `   |
 | IDENTIFIER     | `identifier ` |
 
 
@@ -69,12 +69,12 @@
 | functionCall      | `identifier argumentList`                                        |
 | objectMethodAccess | `identifier "." identifier argumentList?`                        |
 | argumentList      | `"(" (expression ("," expression)*)? ")"`                        |
-| binaryOperator    | `"+" \| "-" \| "*" \| "/" \| "==" \| "!=" \| "<" \| ">" \| "<=" \| ">=" \| "&&" \| "||"` |
+| binaryOperator    | `"+"` \| `"-"` \| `"*"` \| `"/"` \| `"=="` \| `"!="` \| `"<"` \| `">"` \| `"<="` \| `">="` \| `"&&"` \| `"\|\|"` | |
 | unaryOperator     | `"+" \| "-" \| "!"`                                             |
 | literal           | `booleanLiteral` \| `integerLiteral` \| `stringLiteral`              |
 | booleanLiteral    | `"true" \| "false"`                                             |
 | integerLiteral    | `[0-9]+`                                                        |
-| stringLiteral     | `\".*\"`                                                      |
+| stringLiteral     |  `"\""(^["]\|(\"))*"\"" `                                                   |
 | className         | `identifier`                                                    |
 | objectName        | `identifier`                                                    |
 | traitName         | `identifier`                                                    |
