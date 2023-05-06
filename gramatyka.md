@@ -3,39 +3,39 @@
 
 | Token          | Symbol      |
 |----------------|-------------|
-| CLASS          | "class"     |
-| OBJECT         | "object"    |
-| TRAIT          | "trait"     |
-| DEF            | "def"       |
-| LPAREN         | "("         |
-| RPAREN         | ")"         |
-| LBRACE         | "{"         |
-| RBRACE         | "}"         |
-| EQ             | "="         |
-| SEMICOLON      | ";"         |
-| IF             | "if"        |
-| ELSE           | "else"      |
-| WHILE          | "while"     |
-| FOR            | "for"       |
-| ARROW          | "<-"        |
-| EQEQ           | "=="        |
-| NEQ            | "!="        |
-| LT             | "<"         |
-| GT             | ">"         |
-| LTEQ           | "<="        |
-| GTEQ           | ">="        |
-| AND         | "&&"        |
-| OR           | "&#124;&#124;"        |
-| PLUS           | "+"         |
-| MINUS          | "-"         |
-| ASTERISK       | "*"         |
-| SLASH          | "/"         |
-| BANG           | "!"         |
-| TRUE           | "true"      |
-| FALSE          | "false"     |
-| INT_LITERAL    | [0-9]+      |
-| STRING_LITERAL | "&#34;.*&#34;"    |
-| IDENTIFIER     | identifier  |
+| CLASS          | `"class"`|
+| OBJECT         | `"object"`   |
+| TRAIT          | `"trait"`  |
+| DEF            | `"def"` |
+| LPAREN         | `"(" `|
+| RPAREN         | `")"`|
+| LBRACE         |` "{"`       |
+| RBRACE         |` "}" `        |
+| EQ             |` "=" `      |
+| SEMICOLON      |` ";" `       |
+| IF             |` "if" `       |
+| ELSE           |` "else" `    |
+| WHILE          |` "while" `  |
+| FOR            | `"for" `    |
+| ARROW          |` "<-" `      |
+| EQEQ           | `"==" `      |
+| NEQ            |` "!=" `     |
+| LT             |` "<" `      |
+| GT             | `">" `      |
+| LTEQ           | `"<="`      |
+| GTEQ           |` ">=" `      |
+| AND         |` "&&"  `    |
+| OR           |`"\|\|"`   |
+| PLUS           |` "+"`       |
+| MINUS          |` "-" `      |
+| ASTERISK       | `"*"`       |
+| SLASH          | `"/" `        |
+| BANG           | `"!"`         |
+| TRUE           | `"true"`    |
+| FALSE          | `"false" `    |
+| INT_LITERAL    | `[0-9]+`    |
+| STRING_LITERAL | `\".*\"`    |
+| IDENTIFIER     | `identifier ` |
 
 
 ### Zbiór symboli nieterminalnych:
@@ -69,7 +69,7 @@
 | functionCall      | `identifier argumentList`                                        |
 | objectMethodAccess | `identifier "." identifier argumentList?`                        |
 | argumentList      | `"(" (expression ("," expression)*)? ")"`                        |
-| binaryOperator    | `"+"` \| `"-"` \| `"*"` \| `"/"` \| `"=="` \| `"!="` \| `"<"` \| `">"` \| `"<="` \| `">="` \| `"&&"` \| `"\|\|"` |
+| binaryOperator    | `"+" \| "-" \| "*" \| "/" \| "==" \| "!=" \| "<" \| ">" \| "<=" \| ">=" \| "&&" \| "||"` |
 | unaryOperator     | `"+" \| "-" \| "!"`                                             |
 | literal           | `booleanLiteral` \| `integerLiteral` \| `stringLiteral`              |
 | booleanLiteral    | `"true" \| "false"`                                             |
