@@ -69,7 +69,7 @@
 | functionCall      | `identifier argumentList`                                        |
 | objectMethodAccess | `identifier "." identifier argumentList?`                        |
 | argumentList      | `"(" (expression ("," expression)*)? ")"`                        |
-| binaryOperator    | `"+" \| "-" \| "*" \| "/" \| "==" \| "!=" \| "<" \| ">" \| "<=" \| ">=" \| "&&" \| "||"` |
+| binaryOperator    | `"+"` \| `"-"` \| `"*"` \| `"/"` \| `"=="` \| `"!="` \| `"<"` \| `">"` \| `"<="` \| `">="` \| `"&&"` \| `"\|\|"` |
 | unaryOperator     | `"+" \| "-" \| "!"`                                             |
 | literal           | `booleanLiteral` \| `integerLiteral` \| `stringLiteral`              |
 | booleanLiteral    | `"true" \| "false"`                                             |
