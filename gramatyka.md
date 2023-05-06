@@ -1,16 +1,42 @@
 # Gramatyka
 ### Zbiór tokenów (symboli terminalnych):
 
-| Element | Symbol |
-|---------|--------|
-| Plus     | `+`    |
-| Minus | `-`    |
-| PtrRight   | `>`    |
-| PtrLeft    | `<`    |
-| Read   | `,`    |
-| Write  | `.`    |
-| BeginLoop | `[` |
-| EndLoop | `]`   |
+| Token          | Symbol      |
+|----------------|-------------|
+| CLASS          | "class"     |
+| OBJECT         | "object"    |
+| TRAIT          | "trait"     |
+| DEF            | "def"       |
+| LPAREN         | "("         |
+| RPAREN         | ")"         |
+| LBRACE         | "{"         |
+| RBRACE         | "}"         |
+| EQ             | "="         |
+| SEMICOLON      | ";"         |
+| IF             | "if"        |
+| ELSE           | "else"      |
+| WHILE          | "while"     |
+| FOR            | "for"       |
+| ARROW          | "<-"        |
+| EQEQ           | "=="        |
+| NEQ            | "!="        |
+| LT             | "<"         |
+| GT             | ">"         |
+| LTEQ           | "<="        |
+| GTEQ           | ">="        |
+| AND         | "&&"        |
+| OR           | "&#124;&#124;"        |
+| PLUS           | "+"         |
+| MINUS          | "-"         |
+| ASTERISK       | "*"         |
+| SLASH          | "/"         |
+| BANG           | "!"         |
+| TRUE           | "true"      |
+| FALSE          | "false"     |
+| INT_LITERAL    | [0-9]+      |
+| STRING_LITERAL | "&#34;.*&#34;"    |
+| IDENTIFIER     | identifier  |
+
 
 ### Zbiór symboli nieterminalnych:
 
