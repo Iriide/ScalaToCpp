@@ -13,7 +13,8 @@
 "{"              return LBRACE;
 "}"              return RBRACE;
 "="              return EQ;
-";"              return SEMICOLON;
+"."              return DOT;
+";"              return COLON;
 "if"             return IF;
 "else"           return ELSE;
 "while"          return WHILE;
