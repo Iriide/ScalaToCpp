@@ -45,17 +45,17 @@
 | program           | `compilationUnit`                                               |
 | compilationUnit   | `topLevelDef compilationUnit` \| `ε`                               |
 | topLevelDef       | `classDef` \| `objectDef` \| `traitDef` \| `def`                       |
-| classDef          | `"class" className classBody`                                    |
-| objectDef         | `"object" objectName classBody`                                  |
-| traitDef          | `"trait" traitName traitBody`                                    |
-| def               | `"def" methodName parameterList returnType "=" block`            |
+| classDef          | `"class" identifier classBody`                                    |
+| objectDef         | `"object" identifier classBody`                                  |
+| traitDef          | `"trait" identifier traitBody`                                    |
+| def               | `"def" identifier parameterList returnType "=" block`            |
 | classBody         | `"{ classMember* }"`                                           |
 | traitBody         | `"{ traitMember* }"`                                           |
 | classMember       | `classDef` \| `def`                                               |
 | traitMember       | `traitDef` \| `def`                                               |
 | parameterList     | `"(" parameter ("," parameter)* ")"` \| `ε`                       |
-| parameter         | `identifier ":" typeName`                                        |
-| returnType        | `":" typeName` \| `ε`                                              |
+| parameter         | `identifier ":" identifier`                                        |
+| returnType        | `":" identifier` \| `ε`                                              |
 | block             | `"{ statement* }"`                                             |
 | statement         | `block` \| `ifStatement` \| `whileStatement` \| `forStatement` \| `expressionStatement` |
 | ifStatement       | `"if" "(" expression ")" block ("else" block)?`                  |
@@ -75,9 +75,4 @@
 | booleanLiteral    | `"true" \| "false"`                                             |
 | integerLiteral    | `[0-9]+`                                                        |
 | stringLiteral     |  `"\""(^["]\|(\"))*"\"" `                                                   |
-| className         | `identifier`                                                    |
-| objectName        | `identifier`                                                    |
-| traitName         | `identifier`                                                    |
-| methodName        | `identifier`                                                    |
-| typeName          | `identifier`                                                    |
 | identifier        | `[a-zA-Z][a-zA-Z0-9]*`                                          |
