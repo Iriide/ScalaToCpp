@@ -20,7 +20,7 @@
 | ELSE           |` "else" `    |
 | WHILE          |` "while" `  |
 | FOR            | `"for" `    |
-| ARROW          |` "<-" `      |
+| ARROW          |` "->" `      |
 | EQEQ           | `"==" `      |
 | NEQ            |` "!=" `     |
 | LT             |` "<" `      |
