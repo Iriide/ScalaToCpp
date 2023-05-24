@@ -73,4 +73,4 @@
 | argumentList      | `"LPAREN" (expression ("COMMA" expression)*)? "RPAREN"`                        |
 | binaryOperator    | `"PLUS"` \| `"MINUS"` \| `"ASTERISK"` \| `"SLASH"` \| `"EQEQ "` \| `"NEQ"` \| `"LT"` \| `"GT"` \| `"LTEQ"` \| `"GTEQ"` \| `"AND"` \| `"OR"` | |
 | unaryOperator     | `"PLUS" \| "MINUS" \| "BANG"`                                             |
-| literal           | `BOOLEAN_LITERAL` \| `INT_LITERAL` \| `STRING_LITERAL`              |
+| literal           | `"BOOLEAN_LITERAL"` \| `"INT_LITERAL"` \| `"STRING_LITERAL"`              |
